@@ -1,0 +1,217 @@
+/*My Custom CSS*/
+
+body{
+    background-color: darkseagreen;
+    padding-top: 25px;
+    
+}
+.headerimage {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,1)),url(bck.jpg);
+    background-position: center;
+
+}
+
+h1 {
+    font-family: 'Whisper', cursive;
+}
+
+h2{
+    font-family:'Bellefair', serif;
+    text-align: left;
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    color: darkolivegreen;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.4) inset;
+    background: linlear gradient(to bottom, #006400 30%, #008000 40%, #228B22 50%, #2E8B57 100%);
+    border-radius: 7px;
+}
+
+@keyframes slidein {
+    0%{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 150px;
+    }
+    100%{
+        margin-left: 0%
+    }
+}
+
+h3{
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Bellefair', serif;
+    color: darkgreen;
+}
+
+p{
+    font-family: 'Bellefair', serif;
+    overflow: hidden;
+}
+.row{
+    padding: 15px;
+    height: 300px;
+    width: 100%;
+}
+
+.p-2{
+    width: 600px;
+}
+
+.clearfix::after,
+.calendar ol::after {
+    content: ".";
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*======================
+Calendar Styling */
+
+.calendar{
+    border-radius: 60px;
+}
+@media (min-width:992px){
+    .date{
+        font-size: 3.5rem;
+    }
+}
+.calendar ol li{
+    float: left;
+    width: 14.28571%;
+    font-family:'Bellefair', serif;
+    color: seagreen;
+}
+.calendar .day-names{
+    border-bottom: 1px solid #eee;
+}
+
+.calendar .day-names li {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.calendar .days li {
+    border-bottom: 1px solid #eee;
+    min-height: 8rem;
+}
+.calendar .days li .date{
+    margin: 0.5rem 0;
+}
+.calendar .days li .event{
+    font-size: 0.75rem;
+    padding: 0.4rem;
+    color: aliceblue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4rem;
+    margin-bottom: 1px;
+    
+}
+.calendar .days li .event.span-2{
+    width: 200%;
+}
+.calendar .days li .event.begin{
+    border-radius: 1rem 0 0 1rem;
+}
+.calendar .days li .event.end{
+    border-radius: 0 1rem 1rem 0;
+}
+.calendar .days li:nth-child(n+29) {
+    border-bottom: none;
+}
+.calendar .days li.outside .date{
+    color:darkkhaki;
+}
+.demo:hover .event bg-success{
+    animation-name: date;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.date{
+    border-top: 50px solid #ccc;
+    height: 80px;
+}
+
+.btn1{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+.btn2{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+.btn3{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+.btn4{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+.btn5{
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100%;
+}
+
+.def-number-imput{
+    display: inline-flex;
+    width: 80px;
+    height: 30px;
+    background color: darkolivegreen;
+    &, & * {
+        box-sizing: border-box;
+    }
+}
+
+#e6XQtf0nRNx1{
+    width: 400px;
+    margin: 10% auto;
+    display: block;
+}
